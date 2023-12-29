@@ -13,7 +13,7 @@ const VisibilityFilter = () => {
         filter
         <input type="text" 
         name="filter"
-        onChange={(e) => dispatch(filterChange(e.target.value))} style={{outline: 'none'}}/>
+        onChange={(e) => dispatch(filterChange({ filter: e.target.value}))} style={{outline: 'none'}}/>
     </div>
   )
 }
